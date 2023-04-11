@@ -4,13 +4,21 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-//		条件演算子
-//		構文
-//		条件式 ? 式1 : 式2
-		int num = 20;
-		String str = "numの値は";
-		str += num < 10 ? "10未満" : "10以上";
-		System.out.println(str);
+		// if文のネスト(入れ子)
+		int a = 10;
+		if(a > 0) {
+			System.out.println("aは正の値です");
+			if(a % 2 == 0) {
+				System.out.println("aは偶数です");
+			}
+		}else {
+			if(a == 0) {
+				System.out.println("aは0です");
+			}else {
+				System.out.println("aは負の値です");
+			}
+		}
+		
 	}
 
 }
