@@ -6,6 +6,11 @@ public class Main {
 		// TODO 自動生成されたメソッド・スタブ
 		WhilePractise wp = new WhilePractise();
 		wp.whilePractice();
+		
+		System.out.println("  ");		
+		
+		DoWhilePractise dw = new DoWhilePractise();
+		dw.doWhile();
 	}
 
 }

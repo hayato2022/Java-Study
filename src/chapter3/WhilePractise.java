@@ -4,6 +4,9 @@ public class WhilePractise {
 	/*
 	while文　
 	指定された条件が成立する(true)間、繰り返し処理を行う
+	構文
+	while(条件式)
+		処理文; 条件がtrueの場合に処理が実行される
 	*/
 	public void whilePractice() {
 		int num = 0;
