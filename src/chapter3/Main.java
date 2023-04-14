@@ -38,6 +38,10 @@ public class Main {
 		fp.expansionFor();
 		System.out.println();
 		fp.nest();
+		
+		// break文
+		BreakPractise bp = new BreakPractise();
+		bp.breakPractise();
 	}
 
 }
