@@ -29,19 +29,23 @@ public class Main {
 //		} while (count != 5 && count > 0);
 		
 		
-		// for文
-		ForPractise fp = new ForPractise();
-		fp.forPractise1();
-		System.out.println();
-		fp.forPractise2();
-		System.out.println();
-		fp.expansionFor();
-		System.out.println();
-		fp.nest();
+//		// for文
+//		ForPractise fp = new ForPractise();
+//		fp.forPractise1();
+//		System.out.println();
+//		fp.forPractise2();
+//		System.out.println();
+//		fp.expansionFor();
+//		System.out.println();
+//		fp.nest();
+//		
+//		// break文
+//		BreakPractise bp = new BreakPractise();
+//		bp.breakPractise();
 		
-		// break文
-		BreakPractise bp = new BreakPractise();
-		bp.breakPractise();
+		// continue文
+		ContinuePractise cp = new ContinuePractise();
+		cp.continuePractise();
 	}
 
 }
