@@ -28,4 +28,22 @@ public class ForPractise {
 			System.out.print(count2++ + " "); // 処理文内でカウント変数の更新
 		}
 	}
+	
+	/*
+	 * 拡張for文
+	 * 拡張for文は、配列やコレクションの全要素を順番に取り出して処理をする場合に使用され、
+	 * for文に比べて簡素化されている
+	 * 構文
+	 * for(変数宣言 : 参照変数名) {
+	 *  処理文;
+	 *  }
+	 */
+	public void expansionFor() {
+		char[] array = {'a', 'b', 'c', 'd', 'e'};
+		// 配列arrayの全要素を順番に取り出し、出力する
+		for(char c : array) {
+			System.out.print(c + " ");
+		}
+	}
+	
 }

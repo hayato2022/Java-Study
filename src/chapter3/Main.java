@@ -34,6 +34,8 @@ public class Main {
 		fp.forPractise1();
 		System.out.println();
 		fp.forPractise2();
+		System.out.println();
+		fp.expansionFor();
 	}
 
 }
