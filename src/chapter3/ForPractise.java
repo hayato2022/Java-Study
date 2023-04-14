@@ -46,4 +46,18 @@ public class ForPractise {
 		}
 	}
 	
+	/*
+	 * 制御文のネスト
+	 */
+	public void nest() {
+		// 外側の制御文 for文
+		for(int i = 1; i < 10; i++) {
+			// 内側の制御文 if文
+			if((i % 4) == 0) {
+				System.out.println(i + "は4の倍数です");
+			}
+		}
+	}
+	
+	
 }
