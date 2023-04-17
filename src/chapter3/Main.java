@@ -44,8 +44,13 @@ public class Main {
 //		bp.breakPractise();
 		
 		// continue文
-		ContinuePractise cp = new ContinuePractise();
-		cp.continuePractise();
+//		ContinuePractise cp = new ContinuePractise();
+//		cp.continuePractise();
+		
+		// ラベル
+		Label l = new Label();
+		l.labelPractise();
+		
 	}
 
 }
