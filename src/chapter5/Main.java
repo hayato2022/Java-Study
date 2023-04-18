@@ -17,5 +17,11 @@ public class Main {
 		t.myPrint(300, 400);
 		
 	}
+	
+	Employee e = new Employee("aaa");
+	Employee e1 = new Employee("aaaa", 100);
+	Employee e2 = new Employee();
+	Employee e3 = new Employee(200);
+	
 
 }
