@@ -9,4 +9,12 @@ public class SuperA {
 	public void method() {
 		
 	}
+	
+	public void methodA() {
+		System.out.println("SuperA:methodA()");
+	}
+	
+	public static void methodB() {
+		System.out.println("SuperA:methodB()");
+	}
 }

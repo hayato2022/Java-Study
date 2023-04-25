@@ -20,6 +20,10 @@ public class Main {
 		obj1.print("Java"); 
 		SubA obj2 =  new SubA();
 		obj2.print("Java");
+		// staticメンバの再定義
+		obj2.methodA();
+		obj2.methodB();
+		
 	}
 
 }
