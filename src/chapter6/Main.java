@@ -1,5 +1,4 @@
 package chapter6;
-import chapter6.This.Foo;
 
 public class Main {
 
@@ -25,9 +24,17 @@ public class Main {
 //		System.out.println("----------------------------------------");
 		
 		// thisを介したコンストラクタの呼び出し
-		Foo f1 = new Foo();
-		Foo f2 = new Foo("Hey");
-		Foo f3 = new Foo("Bye", 200);
+//		Foo f1 = new Foo();
+//		Foo f2 = new Foo("Hey");
+//		Foo f3 = new Foo("Bye", 200);
+		
+//		// superを介してメソッドを呼び出す
+//		SubA obj = new SubA();
+//		obj.methodB();
+		
+		// 継承関係にあるクラスのコンストラクタの動作
+//		SubA obj1 = new SubA();
+//		SubA obj2 = new SubA(10);
 	}
 
 }
