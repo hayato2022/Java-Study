@@ -1,5 +1,7 @@
 package chapter6;
 import chapter6.Extends.Sales;
+import chapter6.override.SubA;
+import chapter6.override.SuperA;
 
 public class Main {
 
@@ -11,6 +13,13 @@ public class Main {
 		// スーパークラスで定義したメソッドの呼び出し
 		System.out.println("id: " + s.getId());
 		
+		System.out.println("----------------------------------------");
+		
+		// オーバーライド
+		SuperA obj1 = new SuperA();
+		obj1.print("Java"); 
+		SubA obj2 =  new SubA();
+		obj2.print("Java");
 	}
 
 }
