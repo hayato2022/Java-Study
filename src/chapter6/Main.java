@@ -1,6 +1,6 @@
 package chapter6;
-import chapter6.conversion.MyClass;
-import chapter6.conversion.Super1;
+import chapter6.override.SubB;
+import chapter6.override.Super;
 
 public class Main {
 
@@ -45,14 +45,32 @@ public class Main {
 //		System.out.println("methodC:" + obj.methodC(10, 20));
 //		obj.methodB();  // デフォルトメソッドの呼び出し
 //		MyInter2.methodD();  // staticメソッドの呼び出し
-		
-		
+				
 		// 参照型の暗黙型変換
 		// 抽象クラスとそのクラスを継承したサブクラス
-		// スーパークラスの変数にサブクラスのオブジェクトを代入
-		Super1 obj = new MyClass();
-		obj.method(10, 20); // スーパークラスのメソッドの呼び出しOK
-		obj.print();  // サブクラスのメソッドの呼び出しOK
+//		// スーパークラスの変数にサブクラスのオブジェクトを代入
+//		Super1 obj = new MyClass();
+//		obj.method(10, 20); // スーパークラスのメソッドの呼び出しOK
+//		obj.print();  // サブクラスのメソッドの呼び出しOK
+		
+		/*
+		 * instanceof演算子
+		 * instanceof演算子は、ある特定のオブジェクトが特定の型を持つがどうかを
+		 * 判定し、結果をboolean値で返す
+		 * 参照変数名 instanceof クラス名またはインターフェース名
+		 */
+//		C obj = new C();
+//		System.out.println(obj instanceof A);
+//		System.out.println(obj instanceof B);
+//		System.out.println(obj instanceof C);
+//		System.out.println(obj instanceof D);
+		
+		// オーバーライド時に呼び出されるメンバ
+		Super obj = new SubB();
+		System.out.println(obj.x);
+		System.out.println(obj.y);
+		obj.methodA();
+		obj.methodB();
 	}
 
 }
