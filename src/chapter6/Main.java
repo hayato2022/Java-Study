@@ -1,5 +1,6 @@
 package chapter6;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
 
@@ -94,6 +95,20 @@ public class Main {
 			System.out.print(i + " ");
 		}
 		
+		// Setインターフェースの実装
+		// データ構造体に要素の重複を許したくない場合に、Setインターフェースの実装クラスを利用する
+		// HashSetの利用
+		String[] ary = {"CCC", "AAA", "BBB"};
+		HashSet<String> hashSet = new HashSet<String>();
+		hashSet.add(ary[0]);
+		hashSet.add(ary[1]);
+		hashSet.add(ary[2]);
+		hashSet.add(ary[0]); // 重複している要素のため格納しない
+		hashSet.add(ary[1]); // 同↑
+		System.out.println("HashSet size: " + hashSet.size());
+		for(String s : hashSet) {
+			System.out.print(s + " ");
+		}
 	}
 
 }
