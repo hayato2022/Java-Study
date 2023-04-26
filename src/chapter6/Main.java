@@ -1,6 +1,5 @@
 package chapter6;
-import chapter6.override.SubB;
-import chapter6.override.Super;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -65,12 +64,36 @@ public class Main {
 //		System.out.println(obj instanceof C);
 //		System.out.println(obj instanceof D);
 		
-		// オーバーライド時に呼び出されるメンバ
-		Super obj = new SubB();
-		System.out.println(obj.x);
-		System.out.println(obj.y);
-		obj.methodA();
-		obj.methodB();
+//		// オーバーライド時に呼び出されるメンバ
+//		Super obj = new SubB();
+//		System.out.println(obj.x);
+//		System.out.println(obj.y);
+//		obj.methodA();
+//		obj.methodB();
+		
+		// コレクション
+		// Listインターフェースの実装
+		// Listはサイズ変更可能な配列のようなもの
+		// ArrayListの利用
+		ArrayList<Integer> list = new ArrayList<>(); 
+		// ArrayList<Integer>と記述していることにより、Integerオブジェクトのみを格納できるArrayListオブジェクトとなる
+		Integer i1 = 10;
+		int i2 = 2;
+		Integer i3 = i1;
+		list.add(i1);
+		list.add(i2); // intデータはBoxingによりIntegerに変換
+		list.add(i3); // 重複要素
+		list.add(1, 5); // インデックス1番目に5を追加
+		// list.add("abc"); String型を代入しようとしているためコンパイルエラーになる
+		System.out.println("size: " + list.size()); // size()メソッドで格納されている要素数を返す
+		for(int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i) + " "); // データの取り出しにはget()メソッドを使用
+		}
+		System.out.println(); // 改行
+		for(Integer i : list) {
+			System.out.print(i + " ");
+		}
+		
 	}
 
 }
