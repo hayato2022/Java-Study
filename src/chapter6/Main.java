@@ -1,4 +1,6 @@
 package chapter6;
+import chapter6.inter.MyClass;
+import chapter6.inter.MyInter2;
 
 public class Main {
 
@@ -35,6 +37,15 @@ public class Main {
 		// 継承関係にあるクラスのコンストラクタの動作
 //		SubA obj1 = new SubA();
 //		SubA obj2 = new SubA(10);
+		
+		
+		// インターフェースと実装クラスの定義
+		MyClass obj = new MyClass();
+		System.out.println("methodA:" + obj.methodA(10));
+		System.out.println("methodC:" + obj.methodC(10, 20));
+		obj.methodB();  // デフォルトメソッドの呼び出し
+		MyInter2.methodD();  // staticメソッドの呼び出し
+		 
 	}
 
 }
