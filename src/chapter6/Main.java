@@ -1,6 +1,9 @@
 package chapter6;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
 
@@ -95,6 +98,9 @@ public class Main {
 			System.out.print(i + " ");
 		}
 		
+		System.out.println(); // 改行
+		System.out.println("-----------------------------------------------------");
+		
 		
 		// Setインターフェースの実装
 		// データ構造体に要素の重複を許したくない場合に、Setインターフェースの実装クラスを利用する
@@ -110,6 +116,40 @@ public class Main {
 		for(String s : hashSet) {
 			System.out.print(s + " ");
 		}
-	}
+		
+		System.out.println(); // 改行
+		System.out.println("-----------------------------------------------------");
+		
+		/*
+		 * Mapインターフェースの実装
+		 * Mapは一意のキーとそれに対する値(オブジェクト)をペアにして保持する
+		 * キーは識別可能なように一意でないといけない
+		 * キーに対応する値は重複してもかまわない
+		 */
+		// HashMapの利用
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+		map.put(0, "AAA");
+		map.put(1, "BBB");
+		map.put(2, "AAA"); // 値の重複
+		map.put(1, "CCC"); // キーの重複、値が上書きされる
+		for(int i = 0; i < map.size(); i++) {
+			System.out.print(map.get(i) + " ");
+		}
+		
+		System.out.println(); // 改行
+		
+		Set<Integer> keys = map.keySet(); // keySet()メソッド、キーの集合(セット)を取得する
+		for(Integer key : keys) {
+			System.out.print(key + " ");
+		}
+		
+		System.out.println(); // 改行
+		
+		Collection<String> values = map.values(); // values()メソッド、値の集合（コレクション）を取得する
+		for(String value : values) {
+			System.out.print(value + " ");
+		}
+		
+ 	}
 
 }
